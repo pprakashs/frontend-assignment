@@ -13,7 +13,7 @@ const Steps = ({ step, totalSteps }: StepProps) => {
   return <StepOne step={step} totalSteps={totalSteps} />
 }
 
-export default function OnboardingSteps() {
+export default function OnboardingModal() {
   const [modelVisible, setModalVisible] = useState<boolean>(true)
   const [step, setStep] = useState<number>(1)
 
