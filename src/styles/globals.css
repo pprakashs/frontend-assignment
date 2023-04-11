@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground: #181a1f;
+  --background-bg: #f9fbff;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  padding: 0 !important;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground);
+  background-color: var(--background-bg);
+  font-size: 14px;
+}
+p {
+  color: #6d727d;
+  padding-bottom: 15px;
+}
+
+.button--blue {
+  background: linear-gradient(180deg, #2d66f8 0%, #2a5ee6 52.08%, #2554cc 100%);
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.25), 0px 0.5px 0.5px rgba(16, 24, 40, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 20px 14px;
+  line-height: normal;
 }
